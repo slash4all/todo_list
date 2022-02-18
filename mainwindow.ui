@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>290</width>
+    <height>285</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="newNoteBtn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>New ToDo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="oldNoteBtn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Your ToDo's</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>53</x>
+      <y>63</y>
+      <width>171</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="homeBtn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editNoteBtn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>120</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Edit ToDo</string>
+    </property>
+   </widget>
+   <zorder>textEdit</zorder>
+   <zorder>newNoteBtn</zorder>
+   <zorder>oldNoteBtn</zorder>
+   <zorder>homeBtn</zorder>
+   <zorder>editNoteBtn</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>290</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_ToDo"/>
+    <addaction name="actionEdit_ToDo"/>
+    <addaction name="actionOld_ToDo_s"/>
+    <addaction name="actionSave_Todo"/>
+    <addaction name="actionHome"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_ToDo">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>New ToDo</string>
+   </property>
+  </action>
+  <action name="actionOld_ToDo_s">
+   <property name="text">
+    <string>Open ToDo's</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionSave_Todo">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Save Todo</string>
+   </property>
+  </action>
+  <action name="actionEdit_ToDo">
+   <property name="text">
+    <string>Edit ToDo</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
